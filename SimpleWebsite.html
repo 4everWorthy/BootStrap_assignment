@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Bootstrap Website</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#models">Our Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Hero section (Header with a background image and a call-to-action button) -->
+<header class="jumbotron jumbotron-fluid bg-cover d-flex align-items-center" style="background-image: url('ceramicgrill.jpg'); background-position: center; background-size: cover;" id="home">
+  <div class="container text-center py-5">
+    <h1 class="text-shadow">Welcome to My Website</h1>
+    <p class="lead text-shadow">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <a href="#" class="btn btn-primary">Call to Action</a>
+  </div>
+</header>
+
+<!-- About section (Text and an image) -->
+<section class="py-5" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-center">About Us</h2>
+        <p class="lead text-center">Welcome to my website, your ultimate destination for all things ceramic grills. We are passionate about bringing you the best in ceramic grilling technology, combining tradition with innovation. Whether you're a seasoned grill master or a backyard BBQ enthusiast, our expertly crafted ceramic grills promise exceptional performance and mouth-watering results every time. Explore our wide range of products, tips, and recipes to elevate your grilling experience to the next level. Join our community of grill aficionados and discover the art of perfect grilling with your ceramic smoker.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="ceramicgrillchicken.jpg" alt="About Us Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+<!--The text and image are placed in separate columns using the col-md-6 class. The row class creates a horizontal group of columns, and the container class centers the content horizontally.-->  
+
+<!-- Features section (Three columns with icons and text)-->
+<!--Card component (for the Features section)-->
+<!--The Card component is a flexible and customizable component that can be used to display content, such as images, text, and buttons.-->
+<section class="py-5 bg-light" id="models">
+    <div class="container">
+      <h2 class="text-center">Our Models</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">24" Ceramic Grill:</h5>
+              <p class="card-text">Perfect for large gatherings, this 24" ceramic grill delivers unbeatable heat retention and versatile cooking options.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">18" Ceramic Grill:</h5>
+              <p class="card-text">Ideal for family meals, the 18" ceramic grill offers excellent performance and compact convenience for any backyard.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mini Ceramic Grill:</h5>
+              <p class="card-text">Compact and portable, the mini ceramic grill is perfect for small spaces and on-the-go grilling adventures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Each feature is placed in a separate column using the col-md-4 class. The row class creates a horizontal group of columns, and the container class centers the content horizontally.-->
+
+  <!-- Contact section (Contact form) -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputMessage">Message</label>
+          <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <p class="m-0">&copy; 2024 My Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies Note: was at top-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

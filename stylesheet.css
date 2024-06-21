@@ -1,0 +1,69 @@
+.navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+/* Hero Section */
+.jumbotron {
+  background-color: #e9ecef;
+}
+
+.jumbotron .text-white {
+  color: #ffffff; /* Change the text color to white but text did not change */
+  text-shadow: 2px 2px 4px white(248, 250, 250); /* Add a text shadow for better visibility */
+  font-weight: bold; /* Make the text bold */
+}
+
+  /* About Section */
+  #about {
+    background-color: #f8f9fa;
+  }
+
+  .image-container {
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .image-container img {
+    border-radius: 25px; /* Round the edges of the image */
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2); /* Add a mild shadow box */
+  }
+  
+  /* Services Section */
+  #services .card-title {
+    color: #343a40;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #e9ecef;
+  }
+  
+  #contact .form-control,
+  #contact .btn {
+    color: #343a40;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+  }
+  
+  footer .text-center {
+    color: #ffffff;
+  }
+
+/* CSS for responsive layout for Hero section */
+@media (min-width: 768px) {
+  .jumbotron {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron {
+    background-attachment: scroll;
+  }
+}
